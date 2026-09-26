@@ -37,7 +37,7 @@ The optimization problem is formulated by searching for control trajectories tha
 
 A typical objective has the form
 
-\[
+$$
 J =
 \Phi(\mathbf{x}(T))
 +
@@ -47,7 +47,7 @@ J =
 +
 V(\mathbf{x}(t))
 \right]dt,
-\]
+$$
 
 where
 
