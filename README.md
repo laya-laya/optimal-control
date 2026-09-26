@@ -27,11 +27,11 @@ The workflow includes:
 
 A networked dynamical system can be represented schematically as
 
-\[
+$$
 \dot{x}_i = F_i(\mathbf{x},\mathbf{u}),
-\]
+$$
 
-where \(x_i(t)\) represents the state of node \(i\) and \(\mathbf{u}(t)\) denotes the set of time-dependent control inputs.
+where $x_i(t)$ represents the state of node $i$ and $\mathbf{u}(t)$ denotes the set of time-dependent control inputs.
 
 The optimization problem is formulated by searching for control trajectories that steer the system toward a target state while penalizing excessive control effort.
 
@@ -51,10 +51,10 @@ $$
 
 where
 
-- \(T\) is the control horizon,
-- \(u_k(t)\) are control inputs,
-- \(\Phi\) penalizes deviation from the desired terminal state,
-- \(V(\mathbf{x})\) describes the nonlinear state-dependent contribution to the objective.
+- $T$ is the control horizon,
+- $u_k(t)$ are control inputs,
+- $\Phi$ penalizes deviation from the desired terminal state,
+- $V(\mathbf{x})$ describes the nonlinear state-dependent contribution to the objective.
 
 The notebooks solve the resulting nonlinear dynamic optimization problems numerically.
 
@@ -183,9 +183,9 @@ Control-energy analysis
 
 In addition to finding feasible optimal trajectories, the notebooks calculate quantities based on the squared control amplitudes,
 
-\[
+$$
 E(t)=\sum_k u_k^2(t),
-\]
+$$
 
 and integrate them over the control interval to quantify the total control effort.
 
